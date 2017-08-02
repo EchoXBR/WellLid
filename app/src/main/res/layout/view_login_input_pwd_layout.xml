@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_marginTop="@dimen/dp10"
+              android:background="@drawable/shape_white_frame"
+              android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:lines="1"
+        android:padding="1dp"
+        android:text="@string/pwd"
+        android:textSize="@dimen/sp12"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#EEEFFF"/>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/transparent"
+        android:hint="@string/please_input_pwd"
+        android:inputType="textPassword"
+        android:padding="1dp"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_del_pwd"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="3dp"
+        android:contentDescription="@string/desc"
+        android:src="@mipmap/text_del"
+        android:visibility="invisible"/>
+</LinearLayout>
